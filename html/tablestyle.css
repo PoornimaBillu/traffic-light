@@ -1,0 +1,10 @@
+table, tr, th,td{
+    border: 2px solid green;
+}
+table{
+    width: 70%;
+    margin: auto;;
+}
+tr:hover{
+    background-color: gold;
+}

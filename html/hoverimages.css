@@ -1,0 +1,43 @@
+h3{
+    color:lawngreen;
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: dotted;
+}
+.mpk{
+    color: darkmagenta;
+    font-weight: 700;
+    font-style: italic;
+
+}
+.container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 400px;
+    width: 400px;
+    margin: auto;
+}
+body{
+    background-color: aquamarine;
+}
+img:hover{
+    filter: grayscale(100%);
+    /* filter: hue-rotate(300deg); */
+    /* filter: drop-shadow(10px 18px 10px red); */
+    /* cursor: pointer;
+    filter: contrast(300%); */
+    /* border-radius: 50%; */
+}
+img{
+    border-radius: 50%;
+}
+.hide{
+    display: none;
+}
+.pahov:hover+.hide{
+    display: block;
+    color:blue;
+    font-weight: 700;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+}

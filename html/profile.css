@@ -1,0 +1,113 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: "Sofia", sans-serif;
+}
+header{
+    background: greenyellow;
+    padding: 30px;
+    text-align: center;
+}
+header h1{
+    color:white;
+    font-size: 38px;
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+}
+nav{
+    padding: 20px;
+}
+nav ul{
+    list-style-type: none;
+    text-align: center;
+}
+nav ul li {
+    display: inline;
+    font-size: 28px;
+}
+nav li a{
+    margin: 0px 20px;
+    text-decoration: none;
+    font-weight: 400px;
+    color:lightblue;
+    text-transform: uppercase;
+}
+
+nav li a:hover{
+    background: palevioletred;
+}
+.title{
+    background-image: url(../images/learnings.jpg);
+    background-size: cover;
+    padding: 40px;
+    background-position: center;
+
+}
+.title_content{
+    color:goldenrod;
+    padding:20px;
+    background-color: rgba(0, 0, 0,0.3);
+    text-align: center;
+}
+.title_content h4{
+    font-weight: 400;
+    font-size: 30px;
+    margin-bottom: 20px;
+
+}
+.title_content h2{
+    font-weight: 400;
+    font-size: 40px;
+    margin-bottom: 20px;
+
+}
+.skills{
+    background-image: url(../images/skillsbg.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 30px;
+}
+.skills h3{
+    color:white;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+.skills_content{
+    background: rgba(200,200, 200, 0.4);
+    text-align: center;
+    padding-top: 20px;
+    border-radius: 20px;
+}
+.skills_content img{
+    object-fit: contain;
+    width: 100%;
+    max-width: 700px;
+}
+.aboutme{
+    background-image: url(../images/aboutme.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+}
+.aboutme h3{
+    color:white;
+    font-size: 30px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.contact{
+    background-image: url("../images/contact.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+}
+.contact h3{
+    color:green;
+    font-size: 30px;
+    font-weight: 400;
+}
+.contact p{
+    line-height: 20px;
+    margin: 10px;
+}

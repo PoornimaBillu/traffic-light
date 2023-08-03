@@ -1,0 +1,110 @@
+img{
+    height: 400px;
+    width: 500px;
+}
+.posi{
+    height: 400px;
+    width: 400px;
+    border:3px solid greenyellow;
+    background-image: url("../images/bg1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px;
+    border-radius: 50%;
+    text-align: center;
+    align-items: center;
+}
+*{
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.position1,
+.position2,
+.position3,
+.position4,
+.position5,
+.position6{
+
+    margin: 20px 10px;
+    padding: 10px;
+    position: relative;
+}
+.position1{
+    background-image: url("../images/p2.jpg");
+    background-repeat: no-repeat;
+    background-size: auto;
+    border-radius: 50%;
+    height: 80px;
+    width: 80px;
+    position: relative;
+    left: -7px;
+}
+.position2{
+    background-image: url("../images/p3.jpg");
+    background-repeat: no-repeat;
+    background-size: auto;
+    border-radius: 50%;
+    height: 80px;
+    width: 80px;
+    position: relative;
+    right: 15px;
+    top:39px
+}
+.position3{
+    background-image: url("../images/p4.jpg");
+    background-repeat: no-repeat;
+    background-size: auto;
+    border-radius: 50%;
+    height: 80px;
+    width: 80px;
+    position: relative;
+    top: 30px;
+    left:78px;
+}
+.position4{
+    background-image: url("../images/p5.jpg");
+    background-repeat: no-repeat;
+    background-size: auto;
+    border-radius: 50%;
+    height: 80px;
+    width: 80px;
+    position: relative;
+    
+    top: -96px;
+    left: 222px
+}
+.position5{
+    background-image: url("../images/p6.jpg");
+    background-repeat: no-repeat;
+    background-size: auto;
+    border-radius: 50%;
+    height: 80px;
+    width: 80px;
+    position: relative;
+    left:284px;
+    top:-317px;
+}
+.position6{
+    background-image: url("../images/p1.jpg");
+    background-repeat: no-repeat;
+    background-size: auto;
+    border-radius: 50%;
+    height: 80px;
+    width: 80px;
+    position: relative;
+    left:224px;
+    top:-544px;
+}
+.position7{
+    background-image: url("../images/p7.jpg");
+    background-repeat: no-repeat;
+    background-size: auto;
+    border-radius: 50%;
+    height: 80px;
+    width: 80px;
+    position: relative;
+    left:114px;
+    top:-675px;
+    text-align: center;
+}

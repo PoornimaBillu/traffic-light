@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container{
+        height: 490px;
+        width: 170px;
+        border: 3px solid black;
+    }
+    .div1{
+        height: 150px;
+        width: 150px;
+        border: 2px solid grey;
+        border-radius: 50%;
+        /* background-color: green; */
+        margin: 10px;
+    }
+    .div2{
+        height: 150px;
+        width: 150px;
+        border-radius: 50%;
+        border: 2px solid grey;
+        /* background-color: orange; */
+        margin: 10px;
+    }
+    .div3{
+        height: 150px;
+        width: 150px;
+        border-radius: 50%;
+        border: 2px solid grey;
+        /* background-color: red; */
+        margin: 10px;
+    }
+    .buttons{
+        margin: 0px 10px;
+        margin-top: 30px;
+    }
+    button{
+        background-color: gray;
+        padding: 8px;
+        border-radius: 4px;
+    }
+    button:nth-child(1){
+        background-color: green;
+
+    }
+    button:nth-child(2){
+        background-color: yellow;
+    }
+    button:nth-child(3){
+        background-color: red;
+    }
+</style>
+<body>
+    <!-- <h2>Traffic Light Program</h2> -->
+<div class="container">
+    <div class="div1" id="green">
+
+    </div>
+    <div class="div2" id="yellow">
+
+    </div>
+    <div class="div3" id="red">
+
+    </div>
+    
+
+</div>
+<div class="buttons">
+    <button onclick="selectColor('green')">Green</button>
+    <button onclick="selectColor('orange')">Orange</button>
+    <button onclick="selectColor('red')">Red</button>
+    <button onclick="selectColor('reset')">Reset</button>
+</div>
+
+
+
+    <script>
+function selectColor(color){
+    // if(color === "green"){
+    //     document.getElementById("green").style.backgroundColor="green"
+    // }
+    // else if(color === "orange"){
+    //     document.getElementById("yellow").style.backgroundColor="orange"
+    // }
+    // else if(color === "red") {
+    //     document.getElementById("red").style.backgroundColor="red"
+    // }
+    // else{
+    //     style.backgroundColor="grey"
+    // }
+    document.getElementById("green").style.backgroundColor="#f2faf8";
+    document.getElementById("yellow").style.backgroundColor="#f2faf8";
+    document.getElementById("red").style.backgroundColor="#f2faf8"
+    switch(color){
+        case "green": {document.getElementById("green").style.backgroundColor="green";
+        break;
+    }
+        case "orange":{document.getElementById("yellow").style.backgroundColor="yellow";
+        break;
+}
+        case "red": {document.getElementById("red").style.backgroundColor="red";
+        break;
+    }
+        
+        default:{
+        document.getElementById("green").style.backgroundColor="#f2faf8";
+        document.getElementById("yellow").style.backgroundColor="#f2faf8";
+        document.getElementById("red").style.backgroundColor="#f2faf8"
+    }
+}
+}
+
+    </script>
+</body>
+</html>
