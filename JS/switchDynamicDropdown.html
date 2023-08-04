@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Select Dropdown dynamically</h2>
+    <select id="parent" onchange="dynamicdro()">
+        <option>Select City</option>
+        <option value="nellore">Nellore</option>
+        <option value="chittore">Chittor</option>
+        <option value="hyderabad">Hyderabad</option>
+        <option value="ongole">Ongole</option>
+    </select>
+    <select id="subchild">
+
+    </select>
+    <script>
+        function dynamicdro(){
+        var city= document.getElementById("parent").value;
+        var testCenters = document.getElementById("subchild");
+switch (city) {
+    case "nellore": testCenters.innerHTML="<option>Gudur</option><option>Sullurpeta</option><option>Naidupeta</option><option>Venkatagiri</option>";break;
+    case "chittore":testCenters.innerHTML="<option>Tirupati</option><option>Madanapalli</option><option>Renigunta</option><option>Srikalahasthi</option>";break;
+    case "ongole": testCenters.innerHTML="<option>Chirala</option><option>Bapatla</option><option>Tenali</option><option>Prakasam</option>";break;
+
+    case "hyderabad": testCenters.innerHTML="<option>Kukatpally</option><option>Madhapur</option><option>Amerrpeta</option><option>Panjagutta</option>";break;        
+}
+        }
+    </script>
+</body>
+</html>
