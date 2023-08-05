@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+    <h2>Product Management Application</h2>
+    <input type="text" id="pname" placeholder="enter name of the product" /> <br><br>
+    <input type="number" id="pprice" placeholder="enter price of the product" /><br><br>
+    <input type="text" id="pid" placeholder="enter description of the product " /><br><br>
+    <input type="text" id="pimage" placeholder="image Url" /><br><br>
+    <button onclick="addProduct()">Add Product</button>
+</center>
+<ul id="ul">
+
+</ul>
+   <script>
+    var products=[]
+function addProduct(){
+    
+    var name = document.getElementById("pname").value;
+    var price = document.getElementById("pprice").value;
+    var productId = document.getElementById("pid").value;
+    var image = document.getElementById("pimage").value;
+    var product = {
+        ProductName:name,
+        ProductPrice:price,
+        Description:productId,
+        Image:image
+    }
+    //console.log("products",product)
+    products.push(product)
+    console.log(products)
+    displayProducts();
+}
+
+function displayProducts(){
+    var index = 0;
+    var ul = document.getElementById("ul")
+    var productList = ""
+    while(index < products.length){
+        var obj = products[index]
+        // console.log(obj.ProductName+"\t"+obj.ProductPrice+"\t"+obj.Description+"\t"+obj.Image)
+        productList=productList+"<li>"+obj.ProductName+"&nbsp"+obj.ProductPrice+"&nbsp"+obj.Description+"&nbsp"+"<img src="+'obj.Image'+"/>"+"&nbsp"+obj.image+"</li>"
+        index++;
+        ul.innerHTML=productList;
+    }
+}
+   </script> 
+</body>
+</html>

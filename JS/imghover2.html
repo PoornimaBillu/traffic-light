@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+    .outer{
+        position: relative;
+        height: 100%;
+        width:60%;
+
+    }
+    .outer img,.inner img{
+        width: 100%;
+    
+    }
+    .inner{
+        position: absolute;
+        top:0;
+        left: 0;
+        display:none;
+    }
+    .outer:hover .inner{
+        display: block;
+    }
+    .section{
+        display:grid;
+        grid-template-columns: auto auto auto auto;
+        grid-column-gap:10px ;
+        padding: 10px;
+    }
+    @media only screen and (max-width:420px){
+        .section{
+            grid-template-columns: auto;
+            grid-row-gap: 10px;
+        }
+    }
+</style>
+<body>
+    <div class="section">
+        <div class="grid-">
+    <div class="outer">
+    
+    <img src="../images/yellow1.avif" />
+
+<div class="inner">
+    <img src="../images/yellow3.avif" />
+</div>
+</div>
+</div>
+<div class="grid-">
+    <div class="outer">
+    
+    <img src="../images/b1.avif" />
+
+<div class="inner">
+    <img src="../images/chair2.webp" />
+</div>
+</div>
+</div>
+<!-- <div class="grid-">
+    <div class="outer">
+    
+    <img src="../images/mpk.jpg" />
+
+<div class="inner">
+    <img src="../images/mpkwithbhuvi.jpg" />
+</div>
+</div>
+</div> -->
+<div class="grid-">
+    <div class="outer">
+    
+    <img src="../images/bed1.avif" />
+
+<div class="inner">
+    <img src="../images/bed2.avif" />
+</div>
+</div>
+</div> 
+
+
+
+ </div>
+</body>
+</html>
